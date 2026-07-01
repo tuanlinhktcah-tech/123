@@ -442,7 +442,7 @@ useEffect(() => {
           {/* Section title */}
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              Dịch Vụ Công Trực Tuyến Bộ Công An
+              Dịch vụ công trực tuyến Bộ Công an
             </h2>
             <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-amber-500 mx-auto rounded-full"></div>
             <p className="text-lg text-slate-600 dark:text-slate-400 font-medium">
@@ -661,7 +661,7 @@ useEffect(() => {
                     onClick={() => setActiveVideoUrl(video.youtubeId)}
                     className="w-full py-2.5 rounded-xl border border-blue-600/20 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer"
                   >
-                    Xem Ngay Video
+                    Xem ngay Video
                     <ExternalLink className="w-4 h-4" />
                   </button>
                 </div>
@@ -735,10 +735,10 @@ useEffect(() => {
 
             <div className="relative z-10 text-center max-w-2xl mx-auto mb-12 space-y-4">
               <span className="px-3 py-1 rounded-full bg-amber-400 text-slate-950 text-xs font-extrabold uppercase tracking-widest">
-                Quét mã QR - Tải & Truy cập ngay
+                Quét mã QR truy cập ngay
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-                Trung Tâm Tra Cứu & Tải Ứng Dụng
+                Trung tâm tra cứu & tải ứng dụng
               </h2>
               <p className="text-blue-200 text-sm sm:text-base">
                 Dùng điện thoại quét các mã QR dưới đây để tải nhanh ứng dụng VNeID chính thức hoặc truy cập tức thì các cổng thông tin công ích.
@@ -754,6 +754,12 @@ useEffect(() => {
                   bg: "from-blue-600 to-indigo-700"
                 },
                 {
+                  title: "ĐTN Công an Bắc Ninh",
+                  desc: "Trang thông tin hỗ trợ",
+                  qrText: "CỔNG DVC BỘ CÔNG AN",
+                  bg: "from-amber-500 to-red-600"
+                }
+                {
                   title: "VNeID Android (Google Play)",
                   desc: "Tải ứng dụng cho máy Android",
                   qrText: "VNEID ANDROID",
@@ -765,12 +771,6 @@ useEffect(() => {
                   qrText: "VNEID IOS APPSTORE",
                   bg: "from-sky-600 to-blue-700"
                 },
-                {
-                  title: "ĐTN Công an Bắc Ninh",
-                  desc: "Trang thông tin hỗ trợ",
-                  qrText: "ĐTN CA BẮC NINH",
-                  bg: "from-amber-500 to-red-600"
-                }
               ].map((item, idx) => (
                 <div key={idx} className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 text-center border border-white/15 flex flex-col justify-between items-center group hover:bg-white/15 transition-all">
                   <div className="space-y-1.5 mb-4">
@@ -826,7 +826,7 @@ useEffect(() => {
           
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              Hệ Thống Kênh Liên Hệ Hỗ Trợ
+              Hệ thống kênh liên hệ hỗ trợ
             </h2>
             <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-amber-500 mx-auto rounded-full"></div>
             <p className="text-lg text-slate-600 dark:text-slate-400 font-medium">
@@ -845,7 +845,7 @@ useEffect(() => {
                   <span className="p-1.5 bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 rounded-lg">
                     <Phone className="w-5 h-5" />
                   </span>
-                  Kênh Kết Nối Nhanh
+                  Kênh kết nối nhanh
                 </h3>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -889,7 +889,7 @@ useEffect(() => {
                   <span className="p-1.5 bg-red-100 dark:bg-red-950 text-red-600 dark:text-red-400 rounded-lg">
                     <Users className="w-5 h-5" />
                   </span>
-                  Cán Bộ Hỗ Trợ Chuyển Đổi Số
+                  Cán bộ hỗ trợ Chuyển đổi số
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {SUPPORT_OFFICERS.map((officer, index) => (
@@ -926,7 +926,7 @@ useEffect(() => {
                   </div>
                   <div>
                     <h3 className="font-bold text-sm sm:text-base tracking-wide flex items-center gap-1.5">
-                      Trợ Lý Số Tuổi Trẻ Bắc Ninh
+                      Trợ lý số Tuổi trẻ Công an Bắc Ninh
                       <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
                     </h3>
                     <p className="text-[10px] sm:text-xs text-blue-200 font-semibold uppercase tracking-wider">Hỗ trợ DVC & VNeID 24/7</p>
@@ -1197,7 +1197,7 @@ useEffect(() => {
                 <Bot className="w-6 h-6 text-amber-400" />
                 <div>
                   <h4 className="font-extrabold text-sm flex items-center gap-1.5">
-                    Trợ lý ảo Công an Bắc Ninh
+                    Trợ lý ảo Thanh niên Công an Bắc Ninh
                     <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
                   </h4>
                   <p className="text-[10px] text-blue-200 uppercase tracking-widest font-semibold">Tư vấn DVC & VNeID</p>
@@ -1346,7 +1346,7 @@ useEffect(() => {
                 <div className="space-y-4">
                   <h4 className="font-extrabold text-slate-900 dark:text-white text-base sm:text-lg flex items-center gap-2">
                     <FileText className="w-5 h-5 text-amber-500" />
-                    Thành Phần Hồ Sơ Yêu Cầu
+                    Thành phần hồ sơ yêu cầu
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {selectedService.documents.map((doc, dIdx) => (
@@ -1362,7 +1362,7 @@ useEffect(() => {
                 <div className="space-y-4">
                   <h4 className="font-extrabold text-slate-900 dark:text-white text-base sm:text-lg flex items-center gap-2">
                     <Play className="w-5 h-5 text-red-500" />
-                    Video Hướng Dẫn Trực Quan
+                    Video hướng dẫn trực quan
                   </h4>
                   <div className="aspect-video rounded-xl overflow-hidden bg-slate-950 border border-slate-800 relative shadow-md">
                     <video controls className="w-full h-full">
@@ -1457,7 +1457,7 @@ useEffect(() => {
                 <div className="space-y-3">
                   <h4 className="font-extrabold text-slate-900 dark:text-white text-base flex items-center gap-2">
                     <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                    Hướng Dẫn Các Bước Tích Hợp / Sử Dụng
+                    Hướng dẫn các bước tích hợp / Sử dụng
                   </h4>
                   <ul className="space-y-2.5">
                     {selectedVNeIDUtility.howToUse.map((step, sIdx) => (
@@ -1474,7 +1474,7 @@ useEffect(() => {
                   <div className="space-y-3">
                     <h4 className="font-extrabold text-slate-900 dark:text-white text-base flex items-center gap-2">
                       <Play className="w-5 h-5 text-red-500" />
-                      Video Minh Họa Cách Làm
+                      Video minh họa cách làm
                     </h4>
                     <div className="aspect-video rounded-xl overflow-hidden bg-slate-950 border border-slate-800 relative shadow-md">
                       <iframe
