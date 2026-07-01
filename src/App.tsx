@@ -258,7 +258,7 @@ useEffect(() => {
               />
               <div>
                 <span className="text-xs font-bold uppercase tracking-wider text-red-600 dark:text-red-500 block">Đoàn Thanh Niên</span>
-                <span className="text-sm font-extrabold text-blue-900 dark:text-blue-400 leading-tight block">CA TỈNH BẮC NINH</span>
+                <span className="text-sm font-extrabold text-blue-900 dark:text-blue-400 leading-tight block">CÔNG AN BẮC NINH</span>
               </div>
             </div>
 
