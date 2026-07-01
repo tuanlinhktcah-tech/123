@@ -1,0 +1,6 @@
+{
+  "name": "Cổng Hỗ trợ Dịch vụ công Tuổi trẻ Công an Bắc Ninh",
+  "description": "Website của Đoàn Thanh niên Công an tỉnh Bắc Ninh hỗ trợ người dân thực hiện dịch vụ công trực tuyến và cài đặt, sử dụng các tiện ích ứng dụng VNeID.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
