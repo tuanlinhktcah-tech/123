@@ -39,7 +39,9 @@ import {
   Check
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+// Asset Image generated
 import logo from "./assets/images/logo.png";
+import bannerImg from "./assets/images/Anh.jpg";
 import { 
   PUBLIC_SERVICES, 
   VNEID_UTILITIES, 
@@ -50,9 +52,6 @@ import {
   VNeIDUtility,
   VideoTutorial
 } from "./data";
-
-// Asset Image generated
-const bannerImg = "/src/assets/images/Anh.jpg";
 
 export default function App() {
   // Theme state
@@ -343,7 +342,7 @@ useEffect(() => {
 
       {/* Hero Header Brand Slogan Text banner */}
       <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-slate-900 text-white py-3 px-4 text-center text-xs sm:text-sm font-semibold tracking-wider border-b border-amber-500 shadow-sm">
-        📢 Website thuộc Đề án Chuyển đổi số Quốc gia của Đoàn Thanh niên Công an tỉnh Bắc Ninh đồng hành cùng Nhân dân
+        📢 Website thuộc Dự án Chuyển đổi số của Đoàn Thanh niên Công an tỉnh Bắc Ninh đồng hành cùng Nhân dân
       </div>
 
       {/* 2. BANNER CHÍNH (HERO SECTION) */}
