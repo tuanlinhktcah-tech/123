@@ -65,31 +65,33 @@ export const PUBLIC_SERVICES: PublicService[] = [
     portalUrl: "https://dichvucong.bocongan.gov.vn/"
   },
   {
-    id: "dang-ky-thuong-tru",
-    title: "Đăng ký thường trú",
-    description: "Thủ tục đăng ký hộ khẩu thường trú cho người dân khi chuyển đến nơi ở mới hợp pháp.",
-    icon: "Home",
+    id: "thong-bao-luu-tru",
+    title: "Thông báo lưu trú",
+    description: "Thực hiện thông báo khi có khách đến lưu trú qua đêm tại hộ gia đình, khách sạn, nhà nghỉ, ký túc xá.",
+    icon: "UserCheck",
     steps: [
-      "Đăng nhập Cổng dịch vụ công Bộ Công an bằng tài khoản VNeID.",
-      "Nộp hồ sơ trực tuyến, chọn thủ tục 'Đăng ký thường trú'.",
-      "Điền đầy đủ thông tin người đăng ký và các thành viên cùng thay đổi.",
-      "Tải lên bản chụp/scan giấy tờ chứng minh chỗ ở hợp pháp (Sổ đỏ, Hợp đồng mua bán, Giấy cho thuê...).",
-      "Nộp hồ sơ trực tuyến và đợi kết quả giải quyết của Công an cấp xã/phường."
+      "Mở ứng dụng VNeID (đã kích hoạt tài khoản mức 2).",
+      "Chọn mục 'Thủ tục hành chính'.",
+      "Chọn chức năng 'Thông báo lưu trú'.",
+      "Chọn loại hình cơ sở lưu trú (Hộ gia đình, Nhà cho thuê, Khách sạn...)",
+      "Điền thông tin người đến lưu trú (Họ tên, Số định danh, Lý do, Thời gian lưu trú).",
+      "Xác nhận gửi khai báo. Hệ thống lập tức tiếp nhận thông tin và chuyển tới cơ quan Công an xã/phường quản lý."
     ],
     documents: [
-      "Tờ khai thay đổi thông tin cư trú (Mẫu CT01)",
-      "Giấy tờ, tài liệu chứng minh chỗ ở hợp pháp (Giấy chứng nhận QSDĐ, Hợp đồng thuê nhà...)"
+      "Thông tin giấy tờ tùy thân của khách lưu trú (CCCD, Hộ chiếu)",
+      "Thông tin của người khai báo lưu trú"
     ],
-    youtubeId: "uO0X27gAisg",
+    youtubeId: "g6f-r3o1kL0",
     portalUrl: "https://dichvucong.bocongan.gov.vn/"
   },
-  {
+   {
     id: "dang-ky-tam-tru",
     title: "Đăng ký tạm trú",
     description: "Đăng ký tạm trú trực tuyến cho công dân đến sinh sống, học tập hoặc làm việc tại tỉnh Bắc Ninh.",
     icon: "MapPin",
     steps: [
-      "Đăng nhập Cổng dịch vụ công Bộ Công an bằng tài khoản VNeID.",
+      "Mở ứng dụng VNeID (đã kích hoạt tài khoản mức 2).",
+      "Chọn mục 'Thủ tục hành chính'.",
       "Chọn mục 'Đăng ký tạm trú'.",
       "Điền chi tiết thông tin địa chỉ nơi tạm trú, thời gian tạm trú dự kiến.",
       "Đính kèm tài liệu chứng minh chỗ ở hợp pháp hoặc sự đồng ý của chủ hộ.",
@@ -103,22 +105,23 @@ export const PUBLIC_SERVICES: PublicService[] = [
     portalUrl: "https://dichvucong.bocongan.gov.vn/"
   },
   {
-    id: "khai-bao-luu-tru",
-    title: "Khai báo lưu trú",
-    description: "Thực hiện khai báo khi có khách đến lưu trú qua đêm tại hộ gia đình, khách sạn, nhà nghỉ, ký túc xá.",
-    icon: "UserCheck",
+    id: "dang-ky-thuong-tru",
+    title: "Đăng ký thường trú",
+    description: "Thủ tục đăng ký hộ khẩu thường trú cho người dân khi chuyển đến nơi ở mới hợp pháp.",
+    icon: "Home",
     steps: [
-      "Mở ứng dụng VNeID (đã kích hoạt tài khoản mức 2) hoặc truy cập Cổng Dịch vụ công cư trú.",
-      "Chọn chức năng 'Khai báo lưu trú'.",
-      "Chọn loại hình cơ sở lưu trú (Hộ gia đình, Nhà cho thuê, Khách sạn...)",
-      "Điền thông tin người đến lưu trú (Họ tên, Số định danh, Lý do, Thời gian lưu trú).",
-      "Xác nhận gửi khai báo. Hệ thống lập tức tiếp nhận thông tin và chuyển tới cơ quan Công an xã/phường quản lý."
+      "Đăng nhập ứng dụng VNeID.",
+      "Chọn mục 'Thủ tục hành chính'.",
+      "Nộp hồ sơ trực tuyến, chọn thủ tục 'Đăng ký thường trú'.",
+      "Điền đầy đủ thông tin người đăng ký và các thành viên cùng thay đổi.",
+      "Tải lên bản chụp/scan giấy tờ chứng minh chỗ ở hợp pháp (Sổ đỏ, Hợp đồng mua bán, Giấy cho thuê...).",
+      "Nộp hồ sơ trực tuyến và đợi kết quả giải quyết của Công an cấp xã/phường."
     ],
     documents: [
-      "Thông tin giấy tờ tùy thân của khách lưu trú (CCCD, Hộ chiếu)",
-      "Thông tin của người khai báo lưu trú"
+      "Tờ khai thay đổi thông tin cư trú (Mẫu CT01)",
+      "Giấy tờ, tài liệu chứng minh chỗ ở hợp pháp (Giấy chứng nhận QSDĐ, Hợp đồng thuê nhà...)"
     ],
-    youtubeId: "g6f-r3o1kL0",
+    youtubeId: "uO0X27gAisg",
     portalUrl: "https://dichvucong.bocongan.gov.vn/"
   },
   {
@@ -127,7 +130,8 @@ export const PUBLIC_SERVICES: PublicService[] = [
     description: "Thực hiện khai báo khi đi khỏi nơi cư trú",
     icon: "UserCheck",
     steps: [
-      "Mở ứng dụng VNeID (đã kích hoạt tài khoản mức 2) hoặc truy cập Cổng Dịch vụ công cư trú.",
+      "Mở ứng dụng VNeID (đã kích hoạt tài khoản mức 2).",
+      "Chọn mục 'Thủ tục hành chính'.",
       "Chọn chức năng 'Khai báo tạm vắng'.",
       "Điền đầy đủ các thông tin theo yêu cầu: lý do, thời gian, địa chỉ nơi đến.",
       "Xác nhận thông tin và gửi yêu cầu."
@@ -135,6 +139,66 @@ export const PUBLIC_SERVICES: PublicService[] = [
     documents: [
       "Thông tin cá nhân (họ tên, số định danh hoặc hộ chiếu)",
       "Thông tin tạm vắng: lý do, thời gian dự kiến vắng, địa điểm nơi đến..."
+    ],
+    youtubeId: "g6f-r3o1kL0",
+    portalUrl: "https://dichvucong.bocongan.gov.vn/"
+  },
+  {
+    id: "dieu-chinh-thong-tin-cu-tru",
+    title: "Điều chỉnh thông tin về cưu trú trong CSDL cư trú",
+    description: "Thủ tục dành cho công dân khi phát hiện thông tin cư trú trong Cơ sở dữ liệu về cư trú chưa chính xác hoặc có thay đổi cần được cập nhật, điều chỉnh theo quy định.",
+    icon: "Home",
+    steps: [
+      "Mở ứng dụng VNeID (đã kích hoạt tài khoản mức 2).",
+      "Chọn mục 'Thủ tục hành chính'.",
+      "Chọn dịch vụ công 'Điều chỉnh thông tin về cư trú trong CSDL cư trú'.",
+      "Kiểm tra và nhập đầy đủ các nội dung thông tin cần điều chỉnh, bổ sung hoặc cập nhật.",
+      "Tải lên bản chụp/scan các giấy tờ, tài liệu chứng minh nội dung thay đổi hoặc điều chỉnh thông tin cư trú.",
+      "Kiểm tra lại thông tin, nộp hồ sơ trực tuyến và theo dõi kết quả xử lý từ cơ quan đăng ký cư trú."
+    ],
+    documents: [
+      "Tờ khai thay đổi thông tin cư trú (Mẫu CT01).",
+      "Giấy tờ, tài liệu chứng minh nội dung điều chỉnh thông tin cư trú theo quy định."
+    ],
+    youtubeId: "g6f-r3o1kL0",
+    portalUrl: "https://dichvucong.bocongan.gov.vn/"
+  },
+  {
+    id: "xac-nhan-thong-tin-cu-tru",
+    title: "Xác nhận thông tin về cư trú",
+    description: "Thủ tục dành cho công dân có nhu cầu được cơ quan đăng ký cư trú xác nhận thông tin cư trú để phục vụ các giao dịch hành chính, dân sự hoặc các mục đích hợp pháp khác.",
+    icon: "Home",
+    steps: [
+      "Mở ứng dụng VNeID (đã kích hoạt tài khoản mức 2).",
+      "Chọn mục 'Thủ tục hành chính'.",
+      "Chọn dịch vụ công 'Xác nhận thông tin cư trú'.",
+      "Điền đầy đủ thông tin yêu cầu xác nhận và mục đích sử dụng giấy xác nhận thông tin cư trú (nếu có).",
+      "Kiểm tra thông tin và gửi yêu cầu xác nhận trực tuyến.",
+      "Theo dõi trạng thái xử lý và nhận kết quả xác nhận thông tin cư trú theo hình thức đã đăng ký."
+    ],
+    documents: [
+      "Tờ khai thay đổi thông tin cư trú (Mẫu CT01) trong trường hợp pháp luật yêu cầu khai báo bổ sung thông tin.",
+      "Giấy tờ, tài liệu liên quan phục vụ việc xác nhận thông tin cư trú theo yêu cầu của cơ quan có thẩm quyền (nếu có)."
+    ],
+    youtubeId: "g6f-r3o1kL0",
+    portalUrl: "https://dichvucong.bocongan.gov.vn/"
+  },
+  {
+    id: "xoa-dang-ky-thuong-tru",
+    title: "Xóa đăng ký thường trú",
+    description: "Thủ tục thực hiện khi công dân thuộc các trường hợp bị xóa đăng ký thường trú theo quy định của pháp luật về cư trú hoặc có yêu cầu thực hiện thủ tục liên quan.",
+    icon: "UserCheck",
+    steps: [
+      "Mở ứng dụng VNeID (đã kích hoạt tài khoản mức 2).",
+      "Chọn mục 'Thủ tục hành chính'.",
+      "Chọn dịch vụ công 'Xóa đăng ký thường trú'.",
+      "Khai báo đầy đủ thông tin của người đề nghị xóa đăng ký thường trú và lý do thực hiện thủ tục.",
+      "Tải lên bản chụp/scan các giấy tờ, tài liệu chứng minh thuộc trường hợp xóa đăng ký thường trú theo quy định.",
+      "Nộp hồ sơ trực tuyến và theo dõi kết quả giải quyết của cơ quan đăng ký cư trú có thẩm quyền."
+    ],
+    documents: [
+      "Tờ khai thay đổi thông tin cư trú (Mẫu CT01).",
+      "Giấy tờ, tài liệu chứng minh thuộc trường hợp xóa đăng ký thường trú theo quy định của pháp luật."
     ],
     youtubeId: "g6f-r3o1kL0",
     portalUrl: "https://dichvucong.bocongan.gov.vn/"
@@ -156,6 +220,30 @@ export const PUBLIC_SERVICES: PublicService[] = [
       "Thẻ CCCD cũ (nếu có cấp đổi)"
     ],
     youtubeId: "G3mH9eI3gA0",
+    portalUrl: "https://dichvucong.bocongan.gov.vn/"
+  },
+  {
+    id: "cap-ho-chieu-trong-nuoc",
+    title: "Cấp hộ chiếu phổ thông trong nước",
+    description: "Thủ tục dành cho công dân Việt Nam có nhu cầu đề nghị cấp mới hộ chiếu phổ thông trong nước thông qua hình thức trực tuyến.",
+    icon: "FileText",
+    steps: [
+      "Mở ứng dụng VNeID (đã kích hoạt tài khoản mức 2).",
+      "Chọn mục 'Thủ tục hành chính'.",
+      "Chọn dịch vụ công 'Cấp hộ chiếu phổ thông trong nước'.",
+      "Điền đầy đủ thông tin cá nhân theo yêu cầu của hồ sơ cấp hộ chiếu.",
+      "Tải lên ảnh chân dung và các giấy tờ, tài liệu liên quan theo quy định (nếu có).",
+      "Lựa chọn hình thức nhận hộ chiếu trực tiếp hoặc qua dịch vụ bưu chính công ích và thực hiện thanh toán lệ phí trực tuyến.",
+      "Nộp hồ sơ trực tuyến và theo dõi tình trạng xử lý hồ sơ từ cơ quan quản lý xuất nhập cảnh."
+    ],
+    documents: [
+      "Tờ khai đề nghị cấp hộ chiếu phổ thông theo mẫu điện tử.",
+      "Ảnh chân dung theo tiêu chuẩn ảnh hộ chiếu.",
+      "Căn cước công dân hoặc thông tin định danh điện tử còn hiệu lực.",
+      "Giấy tờ chứng minh người đại diện hợp pháp đối với trường hợp người dưới 14 tuổi hoặc người mất năng lực hành vi dân sự (nếu có).",
+      "Các giấy tờ liên quan khác theo yêu cầu của cơ quan quản lý xuất nhập cảnh (nếu có)."
+    ],
+    videofile: "Cap-phieu-LLTP-so2.mp4",
     portalUrl: "https://dichvucong.bocongan.gov.vn/"
   },
   {
