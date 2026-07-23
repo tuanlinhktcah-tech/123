@@ -63,6 +63,9 @@ export default function App() {
   // Active navigation section
   const [activeSection, setActiveSection] = useState<string>("home");
 
+  // Hiển thị toàn bộ dịch vụ hay chỉ hiển thị một phần
+  const [showAllServices, setShowAllServices] = useState<boolean>(false);
+
   // Search & Filters for Public Services
   const [serviceSearch, setServiceSearch] = useState<string>("");
   const [serviceFilter, setServiceFilter] = useState<string>("all");
@@ -154,20 +157,20 @@ export default function App() {
   };
 
   // Filter public services based on search & filter category
-  const filteredServices = useMemo(() => {
+    const filteredServices = useMemo(() => {
     return PUBLIC_SERVICES.filter(service => {
       const matchesSearch = service.title.toLowerCase().includes(serviceSearch.toLowerCase()) || 
                             service.description.toLowerCase().includes(serviceSearch.toLowerCase());
       
       if (serviceFilter === "all") return matchesSearch;
       if (serviceFilter === "cu-tru") {
-        return matchesSearch && ["dang-ky-thuong-tru", "dang-ky-tam-tru", "khai-bao-luu-tru", "khai-bao-tam-vang"].includes(service.id);
+        return matchesSearch && ["thong-bao-luu-tru", "dang-ky-tam-tru", "dang-ky-thuong-tru", "khai-bao-tam-vang", "dieu-chinh-thong-tin-cu-tru", "xac-nhan-thong-tin-cu-tru", "xoa-dang-ky-thuong-tru"].includes(service.id);
       }
       if (serviceFilter === "cccd") {
-        return matchesSearch && ["cap-doi-cccd"].includes(service.id);
+        return matchesSearch && ["cap-cc-cho-nguoi-duoi-14-tuoi", "cap-cc-cho-nguoi-tu-14-tuoi", "cap-doi-cccd", "cap-lại-cccd", "xác-nhan-cmnd"].includes(service.id);
       }
       if (serviceFilter === "tu-phap") {
-        return matchesSearch && ["ly-lich-tu-phap"].includes(service.id);
+        return matchesSearch && ["ly-lich-tu-phap", "cap-ho-chieu-trong-nuoc"].includes(service.id);
       }
       if (serviceFilter === "giao-thong") {
         return matchesSearch && ["dang-ky-phuong-tien", "nop-phat-giao-thong"].includes(service.id);
@@ -178,6 +181,11 @@ export default function App() {
       return matchesSearch;
     });
   }, [serviceSearch, serviceFilter]);
+
+  // Chỉ hiển thị 4 dịch vụ đầu tiên, bấm nút sẽ hiện tất cả
+  const displayedServices = showAllServices
+  ? filteredServices
+  : filteredServices.slice(0, 4);
 
   // Send message to Gemini AI chatbot
   const handleSendMessage = async (customText?: string) => {
@@ -503,8 +511,9 @@ useEffect(() => {
 
           {/* Cards Grid */}
           {filteredServices.length > 0 ? (
+            <>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {filteredServices.map((service, idx) => (
+              {displayedServices.map((service, idx) => (
                 <motion.div
                   key={service.id}
                   initial={{ opacity: 0, y: 20 }}
@@ -533,6 +542,21 @@ useEffect(() => {
                 </motion.div>
               ))}
             </div>
+            
+            {/* Nút xem thêm */}
+            {filteredServices.length > 4 && (
+              <div className="flex justify-center mt-8">
+                <button
+                  onClick={() => setShowAllServices(!showAllServices)}
+                  className="px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-all"
+                >
+                  {showAllServices
+                    ? "Thu gọn"
+                    : `Xem thêm ${filteredServices.length - 4} thủ tục`}
+                </button>
+              </div>
+            )}
+            </>
           ) : (
             <div className="text-center py-12 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-dashed border-slate-300 dark:border-slate-800">
               <Info className="w-12 h-12 text-slate-400 mx-auto mb-4" />
@@ -758,7 +782,7 @@ useEffect(() => {
                   desc: "Trang thông tin hỗ trợ",
                   qrText: "CỔNG DVC BỘ CÔNG AN",
                   bg: "from-amber-500 to-red-600"
-                }
+                },
                 {
                   title: "VNeID Android (Google Play)",
                   desc: "Tải ứng dụng cho máy Android",
